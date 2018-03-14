@@ -8,7 +8,7 @@ Installation Instructions
 1. Install the extension via GitHub, and deploy with modman.
 2. Clear the cache, logout from the admin panel and then login again.
 3. Change the config in System -> Configuration -> Loewenstark -> Instagram
-4. Add id container in DOM (Feed - Position, ID Name in Setup!)
+4. Add container to DOM (Feed - Position)
 
 For example:
 
