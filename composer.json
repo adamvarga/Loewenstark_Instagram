@@ -1,0 +1,21 @@
+{
+  "name": "loewenstark/instagram",
+  "license": "GPL-3.0",
+  "type": "magento-module",
+  "description": "Loewenstark Instagram Feed",
+  "homepage": "https://github.com/adamvarga/Loewenstark_Instagram",
+  "require": {
+    "php": ">=5.3"
+  },
+  "suggest": {
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "authors": [
+    {
+      "name": "Adam Varga",
+      "email": "adamvarga@gmx.net",
+      "role": "Author/Maintainer"
+    }
+  ]
+}
+ 

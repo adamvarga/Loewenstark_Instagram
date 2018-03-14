@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Loewenstark_Instagram>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Loewenstark_Instagram>
+    </modules>
+</config>

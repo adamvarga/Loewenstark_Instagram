@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <ls_instagram translate="label">
+            <label>Loewenstark</label>
+            <sort_order>150</sort_order>
+        </ls_instagram>
+    </tabs>
+    <sections>
+        <ls_instagram translate="label" module="adminhtml">
+            <label>Instagram</label>
+            <tab>ls_instagram</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label comment">
+                    <label>General Setup</label>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                     <comment><![CDATA[Modul based on<a href="http://instafeedjs.com" target='_blank'><strong>instafeedjs</strong></a>]]></comment>
+                    <fields>
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        <user_id translate="label">
+                            <label>User Id</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Generate <a href="https://smashballoon.com/instagram-feed/find-instagram-user-id/" target='_blank'>here</a>]]></comment>
+                        </user_id>
+                        <access_token translate="label">
+                            <label>Access Token</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Generate <a href="http://instagram.pixelunion.net/" target='_blank'>here</a>]]></comment>
+                        </access_token>
+                        <container_name translate="label">
+                            <label>Container Box</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Which container contains the feed, this can be one id name, for example: <br> instafeed ]]></comment>
+                        </container_name>
+                    </fields>
+                </general>
+                <general_feed_setup translate="label comment">
+                    <label>Display Setup</label>
+                    <sort_order>99</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <image_format translate="label comment">
+                            <label>Image format</label>
+                            <comment><![CDATA[Size of the images to get]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ls_instagram/system_config_source_format</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </image_format>
+                        <image_sort translate="label comment">
+                            <label>Image sort</label>
+                            <comment><![CDATA[Sort the images in a set order]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ls_instagram/system_config_source_sort</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </image_sort>
+                        <limit translate="label">
+                            <label>Limit</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Maximum number of Images to add]]></comment>
+                        </limit>
+                        <likes translate="label">
+                            <label>Likes</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Display likes]]></comment>
+                        </likes>
+                    </fields>
+                </general_feed_setup>
+            </groups>
+        </ls_instagram>
+    </sections>
+</config>

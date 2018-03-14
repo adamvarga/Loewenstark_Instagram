@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Loewenstark_Instagram>
+            <version>1.0.0</version>
+        </Loewenstark_Instagram>
+    </modules>
+    <global>
+        <helpers>
+            <ls_instagram>
+                <class>Loewenstark_Instagram_Helper</class>
+            </ls_instagram>
+        </helpers>
+        <blocks>
+            <ls_instagram>
+                <class>Loewenstark_Instagram_Block</class>
+            </ls_instagram>
+        </blocks>
+        <models>
+            <ls_instagram>
+                <class>Loewenstark_Instagram_Model</class>
+            </ls_instagram>
+        </models>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <ls_instagram>
+                    <file>ls_instagram.xml</file>
+                </ls_instagram>
+            </updates>
+        </layout>
+    </frontend>
+</config>

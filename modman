@@ -1,0 +1,5 @@
+src/app/code/local/Loewenstark/Instagram                                                app/code/local/Loewenstark/Instagram
+src/app/design/frontend/base/default/layout/ls_instagram.xml                            app/design/frontend/base/default/layout/ls_instagram.xml
+src/app/design/frontend/base/default/template/loewenstark/instagram/instafeed.phtml     app/design/frontend/base/default/template/loewenstark/instagram/instafeed.phtml
+src/app/etc/modules/Loewenstark_Instagram.xml                                           app/etc/modules/Loewenstark_Instagram.xml
+src/js/ls_instagram/instafeed.js.min.js                                                 js/ls_instagram/instafeed.js.min.js
