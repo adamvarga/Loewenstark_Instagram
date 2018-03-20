@@ -37,12 +37,19 @@ class Loewenstark_Instagram_Block_Instafeed extends Mage_Core_Block_Template {
     }
 
     /*
+     * Get container position
+     */
+
+    public function getContainerPosition() {
+        return Mage::getStoreConfig('ls_instagram/general/container_position');
+    }
+
+    /*
      * Get image format
      */
 
     public function getImageFormat() {
-        $image_format = Mage::getStoreConfig('ls_instagram/general_feed_setup/image_format');
-        return $image_format;
+        return Mage::getStoreConfig('ls_instagram/general_feed_setup/image_format');
     }
 
     /*
@@ -50,8 +57,7 @@ class Loewenstark_Instagram_Block_Instafeed extends Mage_Core_Block_Template {
      */
 
     public function getImageSort() {
-        $image_sort = Mage::getStoreConfig('ls_instagram/general_feed_setup/image_sort');
-        return $image_sort;
+        return Mage::getStoreConfig('ls_instagram/general_feed_setup/image_sort');
     }
 
     /*

@@ -8,16 +8,7 @@ Installation Instructions
 1. Install the extension via GitHub, and deploy with modman.
 2. Clear the cache, logout from the admin panel and then login again.
 3. Change the config in System -> Configuration -> Loewenstark -> Instagram
-4. Add container with ID in DOM (ID Name in Setup!)
-
-For example:
-
-```
-<div id="instagram"></div>
-```
-
-5. You can style the template individually with css / direct im template instafeed.phtml by variable 'template'
-
+4. You can style the template individually with css / direct im template instafeed.phtml by variable 'template' (Position in homepage / categorypage / productpage)
 
 Example setup:
 

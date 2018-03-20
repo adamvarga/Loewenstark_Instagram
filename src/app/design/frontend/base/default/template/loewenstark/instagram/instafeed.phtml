@@ -1,13 +1,15 @@
-<script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'user',
-        userId: <?php echo $this->getUserId(); ?>,
-        accessToken: '<?php echo $this->getAccessToken(); ?>',
-        target: '<?php echo $this->getContainerBox(); ?>',
-        resolution: '<?php echo $this->getImageFormat(); ?>',
-        limit: '<?php echo $this->getLimit(); ?>',
-        sortBy: '<?php echo $this->getImageSort(); ?>',
-        template: '<div class="instagramm-item"><a href="{{link}}" class="instagram-img"><img src="{{image}}" width={{width}} height={{height}} /><?php echo $this->getLikes(); ?></a></div>'
-    });
-    feed.run();
-</script>
+<?php if ($this->getRequest()->getControllerName() == $this->getContainerPosition()): ?>
+    <script type="text/javascript">
+        var feed = new Instafeed({
+            get: 'user',
+            userId: <?php echo $this->getUserId(); ?>,
+            accessToken: '<?php echo $this->getAccessToken(); ?>',
+            target: '<?php echo $this->getContainerBox(); ?>',
+            resolution: '<?php echo $this->getImageFormat(); ?>',
+            limit: '<?php echo $this->getLimit(); ?>',
+            sortBy: '<?php echo $this->getImageSort(); ?>',
+            template: '<div class="instagramm-item"><a href="{{link}}" class="instagram-img"><img src="{{image}}" width={{width}} height={{height}} /><?php echo $this->getLikes(); ?></a></div>'
+        });
+        feed.run();
+    </script>
+<?php endif; ?>
