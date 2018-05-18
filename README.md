@@ -2,6 +2,7 @@ Loewenstark_Instagram
 =====================
 - Instagram feed with configuration
 -------------------------------
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/adamvarga28)
 
 Installation Instructions
 -------------------------
